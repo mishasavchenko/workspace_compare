@@ -8,6 +8,6 @@ APP_PATH=${SCRIPT_DIR}"/../src"
 echo $APP_PATH
 docker run -it \
            --rm \
-           -p 8010:8010 \
+           -p 8080:8080 \
            -v $APP_PATH:/go/src/$APP_NAME \
            $APP_NAME:latest 
